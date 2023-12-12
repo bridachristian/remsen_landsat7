@@ -25,7 +25,7 @@ do:
 
 
 ## Command line interface
-
+To develop!
 ``setup.py`` defines an "entry point" for a script to be used as a
 command line program. Currently, the only command installed is ``wrfvis_gridcell``.
 
