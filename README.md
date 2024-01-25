@@ -17,35 +17,20 @@ Make sure you have all dependencies installed. These are:
 - ephem
 - pyproj
 - pytest
-Download the package and install it in development mode. From the root directory,
-do:
 
-    $ pip install -e .
+## Usage
+Download the package in your folder. You can find the script
+
+    $ landsat.py
 
 
+That allows to perform the entire analysis. 
+Make sure to download also the csv files:
+- spectral_irradiance.csv
+- solar_exoatm.csv
+- wavelenght.csv
 
-## Command line interface
-To develop!
-``setup.py`` defines an "entry point" for a script to be used as a
-command line program. Currently, the only command installed is ``wrfvis_gridcell``.
-
-After installation, just type
-
-    $ wrfvis_gridcell --help
-
-to see what the tool can do.
-
-## Testing
-
-To develop!
-
-I recommend to use [pytest](https://docs.pytest.org) for testing. To test
-the package, run
-
-    $ pytest .
-
-in the package root directory.
-
+These files are use to convert pixel in spectral radiance and to calculate planetary extraatmospheric spectral radiance. 
 
 ## License
 
